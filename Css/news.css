@@ -1,0 +1,91 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&family=Slabo+27px&display=swap');
+
+  *,
+  *::before,
+  *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html{
+    font-size: 62.5%;
+  }
+  body{
+    font-weight:bold
+  }
+
+  header{
+    background-color: aqua;
+    display: flex;
+    justify-content:space-around;
+    gap: 15rem;
+    padding: 2rem;
+  }
+  a{
+    font-size: 2rem;
+  }
+  hi{
+    font-size: 2rem;
+  }
+  nav{
+    background-color: aqua;
+    display: flex;
+    justify-content:center;
+    padding: 2rem;
+    gap: 10rem;
+  }
+  li{
+
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+.main-contant{
+    padding: 1rem;
+}
+h2{
+    font-size: 2.5rem;
+    color: brown;
+}
+.news-container{
+  padding: 3rem;
+  width: 100%;
+}
+.news{
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+    
+}
+img{
+    width: 100%;
+}
+.card{
+  background-color: rgba(127, 255, 212, 0.712);
+}
+.data{
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  color: rgb(160, 87, 230);
+  font-weight: bold;
+  text-align: right;
+}
+h3{
+  padding: 2rem;
+  font-size: 2rem;
+}
+p{
+  width: 100%;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  font-size: 1.4rem;
+}
+.butt{
+  display: inline-block;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+
+  

@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&family=Slabo+27px&display=swap');
+
+  *,
+  *::before,
+  *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html{
+    font-size: 62.5%;
+  }
+  body{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+  }
+  form{
+    background-color: rgba(0, 255, 255, 0.5);
+    width: 40%;
+    box-shadow: 2px 2px 2px 2px rgba(31, 30, 30, 0.788);
+    border-radius: 0.8rem;
+    padding: 2rem;
+    margin: 10rem 30rem;
+  }
+  input{
+    width: 50%;
+    padding: 0.4rem;
+    border-radius: 0.2px;
+  }
+  label{
+    font-size: 2rem;
+  }
+  #firstName{
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+  }
+  #lastName{
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+  }
+  #email{
+    margin-left: 11.5rem;
+    margin-bottom: 2rem;
+  }
+  #password{
+    margin-left: 8.7rem;
+    margin-bottom: 2rem;
+  }
+  #confrimpassword{
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  }
+  #button{
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.452);
+  }
+
+  .icon-postion{
+    position: relative;
+  }
+  .icon-postion i {
+     position: absolute; 
+    top: 15px;
+    font-size: 1.6rem;
+    transform: translate(0%, -50%);
+right: 100px;
+  }
+
+  #button:hover{
+    background-color: rgb(65, 65, 240);
+    transition: all ;
+  }
+  nav{
+    background-color: rgba(48, 199, 245, 0.616);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 4rem;
+  }
+
+  li{
+    list-style: none;
+  }
+  li a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  center img{
+    width: 20%;
+    margin-bottom: 4rem;
+  }
