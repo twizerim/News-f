@@ -49,43 +49,71 @@ h2{
     font-size: 2.5rem;
     color: brown;
 }
-.news-container{
+.news-container {
   padding: 3rem;
   width: 100%;
+  background-color: #f1f1f1f1;
 }
-.news{
+.news {
   display: grid;
-  gap: 3rem;
-  grid-template-columns: repeat(3, 1fr);
-    
+  gap: 2rem;
+  grid-template-columns: repeat(2, 0fr);
 }
-img{
-    width: 100%;
+.card {
+  background-color: rgb(141, 188, 206);
 }
-.card{
-  background-color: rgba(127, 255, 212, 0.712);
+
+.card img {
+  width: 100%;
 }
-.data{
+.card .text {
+  width: 100%;
   padding: 1.5rem;
-  font-size: 1.5rem;
-  color: rgb(160, 87, 230);
-  font-weight: bold;
+}
+.data {
+  color: blueviolet;
+  font-size: 1.2rem;
+  font-weight:bold;
   text-align: right;
 }
-h3{
-  padding: 2rem;
-  font-size: 2rem;
+.card h3 {
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+  color: #363636;
 }
-p{
-  width: 100%;
-  padding-bottom: 2rem;
-  padding-left: 1.5rem;
-  font-size: 1.4rem;
+.card p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-align: justify;
 }
 .butt{
   display: inline-block;
   padding-bottom: 2rem;
   padding-left: 1.5rem;
+}
+
+.spinner{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: solid rgb(250, 248, 248);
+  border-radius: 50%;
+  border-top: 4px solid rgb(35, 35, 110);
+  top: 50%;
+  left: 50%;
+  animation: spin 1s linear infinite;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+@keyframes spin{
+  0%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
   
