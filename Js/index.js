@@ -8,3 +8,7 @@ togglepassword.addEventListener("click",function(e){
 
 
 })
+function ye(){
+     const comment = document.querySelector('.comment').style.display="block"
+   
+}

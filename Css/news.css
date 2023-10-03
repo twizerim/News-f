@@ -57,7 +57,7 @@ h2{
 .news {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(2, 0fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 .card {
   background-color: rgb(141, 188, 206);

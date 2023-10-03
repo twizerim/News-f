@@ -14,10 +14,114 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/v4-font-face.min.css">
 </head>
 <style>
+    body{
+        background-color: rgba(26, 25, 25, 0.795);
+    }
     nav{
-        background-color: rgb(74, 74, 248);
+        background-color: rgb(144, 144, 245);
         display: flex;
+        padding: 1.3rem;
+        justify-content:space-around;
+    }
+    .logo{
+        font-size: 2rem;
+        color: brown;
+    }
+    a i{
+        font-size: 2rem;
+    }
+    .news-container img{
+        max-width: 600px;
+        max-height: 600px;
+    }
+    .news-container{
         padding: 2rem;
+        display: flex;
+        justify-content:space-between
+    }
+    .smaller .date{
+        color: rgb(218, 9, 165);
+        font-weight: 900;
+        text-align: right;
+        padding: 2rem;
+    }
+    .mainTytle{
+        color: rgb(235, 237, 238);
+        font-weight: bold;
+    }
+    .sammury{
+        color: aliceblue;
+        font-weight: bold;
+    }
+    .discription{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .text p{
+        color: #ffffff;
+    }
+    .tytle{
+        color: #ffffff;
+    }
+    .list{
+        display: flex;
+        gap: 3rem;
+        padding-left: 3rem;
+    }
+    li{
+        list-style: none;
+    }
+    .motion{
+        height: 20px;
+        display: flex;
+        gap: 1.5rem;
+        padding: 0.5rem 2rem;
+        align-items: center;
+        background-color: rgba(26, 24, 24, 0.678);
+        border-radius:2rem;
+    }
+    .moti{
+        display: flex;
+        gap: 1.5rem;
+        padding: 0.5rem 2rem;
+        border-left: solid whitesmoke;
+    }
+    .comment{
+        display: none;
+        width: 25%;
+        padding: 1rem;
+        border-radius: 2rem;
+        margin-left: 10rem;
+        margin-bottom: 4rem;
+        background-color: #ffffff;
+    }
+    input{
+        width: 100%;
+        padding: 0.3rem;
+    }
+    .comment p{
+        font-size: 1rem;
+    }
+    .comment-card{
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(1, 1fr);
+        border-radius: 2rem;
+        background-color: blanchedalmond;
+        padding: 2rem;
+    }
+    p{
+        text-align: right;
+        margin-bottom: 0;
+    }
+    h5{
+    font-size: 1.7rem;
+    margin: 0;
+    }
+    .ini{
+        margin: 2rem;
     }
 </style>
 <body>
@@ -25,11 +129,56 @@
         <div class="logo">
             <i>Student of Nyabiheke Cording</i>
         </div>
+        <div class="category">Uburezi</div>
         <div>
             <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-square-facebook"></i></a>
             <a href=""><i class="fa-brands fa-square-twitter"></i></a>
         </div>
     </nav>
+    <div class="singleNews-container">
+        <div class="news-container">
+            <img src="https://www.igeeksblog.com/wp-content/uploads/2021/03/convert-photo-to-pdf-on-iphone-and-ipad.jpg" alt="" srcset="">
+            <div class="smaller">
+                <p class="date">ggyiuyuyoooooohyu</p>
+                <h1 class="mainTytle">hfifgdifhy</h1>
+                <p class="sammury">ggryywygyhybgyhgygguhhgudhuihguhiuthiugshtiugghugsuhuhguhtjjg</p>
+            </div>
+        </div>
+        <div class="discription">
+            <div class="list">
+                <div class="motion">
+                <li><i class="fa-solid fa-thumbs-up" style="color: #ffffff;"></i></li>
+                <li>a</li>
+                <div class="moti">
+                    <li><i class="fa-solid fa-thumbs-down" style="color: #ffffff;"></i></li>
+                    <li>b</li>
+                </div>
+                </div>
+                <div class="motion">
+                <li><i class="fa-regular fa-comment" style="color: #ffffff;" onclick="ye()"></i></li>
+                <li>c</li>
+                
+                </div>
+            </div>
+            <div class="text">
+                <h1 class="tytle">fghffgfgfg</h1>
+                <p>hjkhghuhtghhhtbhgdjhghutuutjtjjrhtukpo[2po[p2qughjbndtyuyeiwwwhubhbgfjnvoitiuhtyijeiurrhy</p>
+            </div>
+        </div>
+    </div>
+    <div class="comment">
+        <h2>All comment are the following</h2>
+        <div class="comment-card">
+            <p>29/3/2023</p>
+            <h5 class="user">gedeo</h5>
+            <span>fgyrghuujhroifuryfygtiiujiyt</span>
+        </div>
+        <div class="ini">
+        <label for="comment">comment:</label>
+        <input type="text" placeholder="type your comment">
+        </div>
+    </div>
+    <script src="../Js/index.js"></script>
 </body>
 </html>

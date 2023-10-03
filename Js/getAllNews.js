@@ -1,9 +1,11 @@
 
 
-const spinner = document.querySelector(".spinner")
-const NewsIndex = document.querySelector(".news")
-spinner.style.disply= "block";
-NewsIndex.style.disply= "none";
+
+const newsIndex = document.querySelector(".news")
+const spinner = document.querySelector(".spinner");
+spinner.style.display = "block";
+newsIndex.style.display = "none";
+
 
 fetch("https://stormy-plum-sawfish.cyclic.cloud/boy/news/news")
 
@@ -13,10 +15,10 @@ fetch("https://stormy-plum-sawfish.cyclic.cloud/boy/news/news")
 
 .then((Jant)=>{
     Jant.data.map((news)=>{
-        spinner.style.disply= "none";
-        NewsIndex.style.disply= "grid"
-
-        NewsIndex.innerHTML +=`
+        spinner.style.display = "none";
+        newsIndex.style.display = "grid";
+       
+        newsIndex.innerHTML +=`
         <div class="card">
         <img src="${news.newsimage[0]}"/>
         <div class="text">
