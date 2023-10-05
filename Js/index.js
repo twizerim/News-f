@@ -3,8 +3,8 @@ const togglepassword=document.querySelector("#togglepassword")
 
 togglepassword.addEventListener("click",function(e){
     
-    const type = password.getAttribute("type")==="password" ? "text":"password";
-    password.setAttribute("type",type);
+    const type = Password.getAttribute("type")==="password" ? "text":"password";
+    Password.setAttribute("type",type);
 
 
 })
