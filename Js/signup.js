@@ -24,7 +24,7 @@ form.addEventListener("submit",(e)=>{
         },
         body: JSON.stringify(data),
     }
-    fetch(`https://stormy-plum-sawfish.cyclic.cloud/boy/user/user`,postman)
+    fetch(`https://gleaming-leggings-bee.cyclic.app/boy/user/user`,postman)
     .then((resp)=>{
         return resp.json()
     })

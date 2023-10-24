@@ -7,7 +7,7 @@ spinner.style.display = "block";
 newsIndex.style.display = "none";
 
 
-fetch("https://stormy-plum-sawfish.cyclic.cloud/boy/news/news")
+fetch("https://gleaming-leggings-bee.cyclic.app/boy/news/news")
 
 .then((Response)=>{
     return Response.json()
@@ -19,6 +19,7 @@ fetch("https://stormy-plum-sawfish.cyclic.cloud/boy/news/news")
         newsIndex.style.display = "grid";
        
         newsIndex.innerHTML +=`
+    
         <div class="card">
         <img src="${news.newsimage[0]}"/>
         <div class="text">

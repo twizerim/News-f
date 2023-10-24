@@ -2,6 +2,10 @@
 const getOneNews = document.querySelector(".singleNews-container")
 const navcategory =document.querySelector(".category")
 const commentss =document.querySelector(".comment-card")
+const likes=document.querySelector(".counting")
+const dislikes =document.querySelector(".countin")
+const comm =document.querySelector(".counti")
+const comment = document.querySelector(".comment-card")
 
 
 const idParams=window.location.href.split("?id=")[1]
@@ -11,7 +15,7 @@ getOneNews.style.display="none"
 navcategory.style.display="none"
 commentss.style.display="none"
 
-fetch(`https://stormy-plum-sawfish.cyclic.cloud/boy/news/${idParams}`)
+fetch(`https://gleaming-leggings-bee.cyclic.app/boy/news/${idParams}`)
 
 .then((resp)=>{
     return resp.json()
@@ -34,31 +38,22 @@ fetch(`https://stormy-plum-sawfish.cyclic.cloud/boy/news/${idParams}`)
     <p class="sammury">${data.data.newssammary}</p>
     </div>
     </div>
-    <div class="discription">
-    <div class="list">
-                <div class="motion">
-                <li><i class="fa-solid fa-thumbs-up" style="color: #ffffff;"></i></li>
-                <li>50</li>
-                <div class="moti">
-                    <li><i class="fa-solid fa-thumbs-down" style="color: #ffffff;"></i></li>
-                    <li>12</li>
-                </div>
-                </div>
-                <div class="motion">
-                <li><i class="fa-regular fa-comment" style="color: #ffffff;" onclick="ye()"></i></li>
-                <li>23</li>
-                </div>
-            </div>
     <div class="text">
     <h1 class="tytle">${data.data.newstytle}</h1>
     <p>${data.data.newsdiscription}</p>
     </div>
     </div>
-    </div>
     `
+    likes.innerHTML=`<li>${data.data.likes.length}</li>`
+    dislikes.innerHTML=`<li>${data.data.dislikes.length}</li>`
+    comm.innerHTML=`<li>${data.data.comments.length}</li>`
     navcategory.innerHTML =`<div class="category">${data.data.categorys.categoryName}</div>`
-    commentss.innerHTML +=`
-    <p>${data.data.comments.postedAt}</p>
-    <span>${data.data.comments.comment}</span>
-    `
+
+    
+    // comment.innerHTML+=`
+    // <div class="onecomment">
+    //      <p>${data.comments.postedAt[+1]}</p>
+    //      <span>${data.comments.comment[+1]}</span>
+    //      </div>
+    // `
 })
