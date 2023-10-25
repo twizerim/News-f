@@ -23,6 +23,8 @@ headers:{
         <td>${user.password}</td>
         <td>${user.role}</td>
         <td>${user.creatadAt}</td>
+        <td><button class="update" style="color:green;padding:0.3rem;font-size:1rem" >Update</button></td>
+        <td><button class="delete" style="color:red;padding:0.3rem;font-size:1rem">Delete</button></td>
 
         </tr>
         `

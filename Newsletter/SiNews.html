@@ -96,7 +96,7 @@
         color:whitesmoke;
     }
     .comment{
-        display: none;
+        /* display: none; */
         width: 25%;
         padding: 1rem;
         border-radius: 2rem;
@@ -133,11 +133,6 @@
     }
     .ini{
         margin: 2rem;
-    }
-    button{
-        position: absolute;
-        top:73%;
-        left: 78%;
     }
     
 .spinner{
@@ -192,12 +187,12 @@
     </div>
     <div class="list">
         <div class="motion">
-        <li><i class="fa-solid fa-thumbs-up" style="color: #ffffff;"></i></li>
+        <li><i class="fa-solid fa-thumbs-up" style="color: #ffffff;" onclick="putt()" id="likes"></i></li>
         <p class="counting">
         <!-- <li>50</li> -->
     </p>
         <div class="moti">
-            <li><i class="fa-solid fa-thumbs-down" style="color: #ffffff;"></i></li>
+            <li><i class="fa-solid fa-thumbs-down " style="color: #ffffff;"></i></li>
             <p class="countin">
             <!-- <li>12</li> -->
         </p>
@@ -219,15 +214,16 @@
             <span>fgyrghuujhroifuryfygtiiujiyt</span> -->
         </div>
         </div>
-        <form action=""class="ini">
+    <form action=""class="ini">
         <label for="comment">comment:</label>
         <input type="text" placeholder="type your comment" id="sendcomm">
-        <button>send</button>
+        <button type="submit">send</button>
     </form>
     </div>
     </div>
-    <Script src="../Js/getOneNews.js"></Script>
+    <Script src="../Js/getOneNews.js"ut()></Script>
     <script src="../Js/index.js"></script>
-    <script src="../Js/getcomment.js"></script>
+    <script src="../Js/postcomment.js"></script>
+    <script src="../Js/likes.js"></script>
 </body>
 </html>

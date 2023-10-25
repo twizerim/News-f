@@ -6,8 +6,6 @@ const likes=document.querySelector(".counting")
 const dislikes =document.querySelector(".countin")
 const comm =document.querySelector(".counti")
 const comment = document.querySelector(".comment-card")
-
-
 const idParams=window.location.href.split("?id=")[1]
 const spinner = document.querySelector(".spinner")
 spinner.style.display="block"
@@ -49,11 +47,13 @@ fetch(`https://gleaming-leggings-bee.cyclic.app/boy/news/${idParams}`)
     comm.innerHTML=`<li>${data.data.comments.length}</li>`
     navcategory.innerHTML =`<div class="category">${data.data.categorys.categoryName}</div>`
 
-    
-    // comment.innerHTML+=`
-    // <div class="onecomment">
-    //      <p>${data.comments.postedAt[+1]}</p>
-    //      <span>${data.comments.comment[+1]}</span>
-    //      </div>
-    // `
+    data.data.comments.map((date)=>{
+
+        comment.innerHTML+=`
+    <div class="onecomment">
+         <p>${date.postedAt}</p>
+         <span>${date.comment}</span>
+         </div>
+    `
+    })
 })
