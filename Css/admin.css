@@ -11,7 +11,6 @@
     font-size: 62.5%;
   }
   body{
-    padding-left: 35rem;
   }
   h1{
     text-align: center;
@@ -21,19 +20,30 @@
   }
 
   nav{
-    background-color: rgba(173, 221, 245, 0.452);
-    padding: 2rem 6rem;
+    background-color: rgba(132, 209, 248, 0.452);
+    display: flex;
+    gap: 3rem;
+     position:relative; 
+     padding: 2rem;
+     justify-content: space-around;
+    top: 0;
+    left: 0;
+    /* z-index: 999; */
+    list-style: none;
+    box-shadow: 2px 2px 2px rgb(29, 29, 29);
+  }
+  .logo{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 999;
-    list-style: none;
-    padding-right: 16rem;
-    box-shadow: 2px 2px 2px rgb(29, 29, 29);
+    align-items: center;
+    gap: 2rem;
+    width: 40%;
+  }
+  .image{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(241, 211, 216);
   }
   nav li a{
     text-decoration: none;
@@ -53,39 +63,27 @@
   nav li:hover{
     color: rgb(39, 145, 238);
   }
-  nav img{
+  .image img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
   }
   .activity{
-    background-color: rgb(241, 211, 216);
-    width: 100%;
-    overflow: hidden;
     padding: 2rem;
- 
   }
-  h2{
+  .u{
+    display: none;
+    font-size: 1.9rem;
     text-align: center;
-    padding: 2rem;
   }
-  table{
-     width: 80%; 
-    border-collapse: collapse;
+  #ok{
+    text-align: center;
   }
-  tr,th,td{
-    font-size: 1.2rem;
-  }
-
-  .user-container{
-    margin-top: 3rem;
-    top: 50%;
-    left: 50%;
-  }
+  
   .message{
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .card1{
     padding: 2rem;
@@ -105,8 +103,27 @@
   h3{
     padding-bottom: 2rem;
   }
+  .user{
+    margin-top: 3rem;
+  }
+  table{
+    border-collapse: collapse;
+    background-color: aqua;
+    display: none;
+    
+  }
+  th{
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: 1px solid grey;
+  }
+  td{
+    font-weight: 900;
+    font-size: 1.2rem;
+    border: 1px solid grey;
+  }
   /* ----------------------update user------------------------------------------ */
-  .update{
+  .updata{
     background-color: #fa0aee;
     margin-top: 3rem;
     width: 30%;
@@ -114,7 +131,8 @@
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
-    margin-left: 20rem;
+    margin-left: 30rem;
+    display: none;
   }
   label{
     font-size: 2rem;
@@ -125,16 +143,41 @@
     padding: 0.6rem;
   }
   .but{
-    display: flex;
-    justify-content: center;
+    margin-left: 5.7rem;
     padding: 2rem;
   }
   .but button{
     padding: 0.3rem 7rem;
-    margin-left: 5.5rem;
     font-size: 1.6rem;
   }
   .but button:hover{
     background-color: blue;
   }
+  #role{
+    padding: 2rem;
+    text-align: center;
+  }
+  .spinner{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: solid rgb(250, 248, 248);
+    border-radius: 50%;
+    border-top: 4px solid rgb(35, 35, 110);
+    top: 70%;
+    left: 50%;
+    animation: spin 1s linear infinite;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+  }
+  
+  @keyframes spin{
+    0%{
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
 

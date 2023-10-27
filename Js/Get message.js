@@ -1,5 +1,8 @@
 
 const message=document.querySelector(".message")
+const spinner = document.querySelector(".spinner");
+spinner.style.display = "block";
+message.style.display = "none";
 
 fetch(`https://gleaming-leggings-bee.cyclic.app/boy/message/message`,{
     headers:{
@@ -10,14 +13,16 @@ fetch(`https://gleaming-leggings-bee.cyclic.app/boy/message/message`,{
 })
 .then((data)=>{
     
-    data.data.map((data)=>{
+    data.data.map((date)=>{
+        spinner.style.display = "none";
+        message.style.display = "grid";
 
         message.innerHTML +=`
         <div class="card1">
-        <p>${data.sendAt}</p>
-        <h2>${data.names}</h2>
-        <h3>${data.email}</h3>
-        <span>${data.messages}</span>
+        <p>${date.sendAt}</p>
+        <h2>${date.names}</h2>
+        <h3>${date.email}</h3>
+        <span>${date.messages}</span>
         </div>
         `
     })

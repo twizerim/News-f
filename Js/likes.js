@@ -1,25 +1,23 @@
 
-// const idparams = window.location.href.split("?id=")[1]
+function submit(){
 
-// function put(){
-//     const like=document.querySelector(".likes")
-//     if(like){
-//         alert("birakunda")
-//     }
-  
-// }
+    const idParams=window.location.href.split("?id=")[1]
+    const token=window.localStorage.getItem("token")
 
-function putt(){
-    const like=document.getElementById("likes");
-    const idparams = window.location.href.split("?id=")[1]
     const postman={
-        method:"PUT",
         headers:{
             "auth-token":token
         }
     }
-    if(like){
-        
-        fetch(``)
-    }
+    fetch(`https://gleaming-leggings-bee.cyclic.app/boy/news/like/${idParams}`,postman)
+    .then((resp)=>{
+        return resp.json()
+    })
+    .then((data)=>{
+        alert(data.message)
+    })
+    .catch((err)=>{
+        alert(err)
+    })
+
 }

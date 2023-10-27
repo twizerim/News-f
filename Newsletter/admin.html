@@ -9,32 +9,34 @@
 <body>
 
     <nav>
-        <div class="logo">
-            <h1>Good News</h1>
-        </div>
-        <img src="../image/news.png" alt="">
-        <li><a href="#u">User</a></li>
+        <li><a href="#" onclick="show()">User</a></li>
         <li><a href="../Newsletter/news.html">News</a></li>
-        <li><a href="#mess">Message</a></li>
+        <li><a href="#" onclick="showmessage()">Message</a></li>
         <li><a href="./SiNews.html">Comment</a></li>
         <li><a href="../Newsletter/cate.html">Category</a></li>
     </nav>
+    <div class="image">
+        <div class="logo">
+            <h1>Good News</h1>
+            <img src="../image/news.png" alt="">
+        </div>
+        <h1>THIS IS<a href="#" style="color:rgb(47, 179, 255)"> MY ADMIN DASHBOARD</a></h1>
+    </div>
         <div class="activity">
-            <h1>THIS IS<a href="#" style="color:rgb(47, 179, 255)"> MY ADMIN DASHBOARD</a></h1>
-            <div class="update">
-                <form action="">
-                    <h2>Update the role of users</h2>
+            <div>
+                <form action="" class="updata">
+                    <h2 id="role">Update the role of users</h2>
                     <label for="update">update</label>
                     <input type="update" name="update" id="update">
                     <div class="but">
-                        <button>update</button>
+                        <button type="submit">update</button>
                     </div>
                 </form>
             </div>
-            <div class="user-container">
-                <h2>Account of all users</h2>
-                <div class="user" id="u">
-                    <table border="2px">
+            <div class="spinner"></div>
+            <div class="user">
+                    <h2 class="u">Account of all users</h2>
+                    <table border="2px" class="getall-user">
                         <tr>
                             <th>NO</th>
                             <th>FirstName</th>
@@ -48,11 +50,10 @@
                             <tr></tr>
 
                     </table>
-                </div>
-                
             </div>
-            <div class="message" id="mess">
-                <h2>All message sent by our friend</h2>
+                
+            <h2 id="ok">All message sent by our friend</h2>
+            <div class="message">
             </div>
 
     <script src="../Js/index.js"></script>

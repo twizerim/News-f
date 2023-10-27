@@ -57,3 +57,6 @@ fetch(`https://gleaming-leggings-bee.cyclic.app/boy/news/${idParams}`)
     `
     })
 })
+
+
+
